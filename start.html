@@ -23,7 +23,7 @@
    font-size: 40px;
    text-transform: uppercase;
    font-family: roboto condensed;
-   /* overflow: hidden; */
+   overflow: hidden;
    cursor: pointer;
   }
 
@@ -36,10 +36,17 @@
    transition: .2s linear;
   }
 
- 
+  button:hover span:nth-child(1) {
+    left: -360px;
+  }
 
-  button:hover span {
-   top: -100px;
+  button span:nth-child(2) {
+    top: -100px;
+    left: 360px;
+  }
+
+  button:hover span:nth-child(2) {
+   left: 0;
   }
  </style>
 </head>
